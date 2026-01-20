@@ -11,12 +11,18 @@ I will show you how to install and run this code, not only that I will also prov
    - python -m pip install Mediapipe
 4. and yup, you did it. now you can test you computer vision (hand tracker).
 
-## OPTIONAL STEP(COMBO WITH ARDUINO)
+## OPTIONAL STEP(COMBO WITH ARDUINO) handino.py
 Well, this is where the fun part is, follow these steps:
 1. you must install new library for connect your code(py) to serial(arduino), it is Serial
 2. Follow this command and paste it into your cmd:
-   - _python -m pip install pyserial_
+   - _python -m pip install pyserial_ and
+   - _python -m pip install time_
 Listen to me, this is not Serial, not serial, nor any other serial, be careful of making mistakes.
-3. 
-4. If successful, you can run the hand tracker with the Arduino combo.
+3. Build your project which is an Arduino and 1 LED, then see what serial you have and attach it to the serial configuration in the handino.py file which says _('COM3', 9600)_
+4. If successful, you can run the hand tracker with the Arduino combo.if dont success, let try this tutorial:
+
+## DEBUGGING
+The first time I made this, I was surprised by many strange phenomena that appeared in the terminal, starting from error codes and libraries that couldn't be used even though I had installed them.
+
+i will continue this readme soon
 
